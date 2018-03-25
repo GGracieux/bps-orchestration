@@ -1,5 +1,5 @@
 # bpscores-orchestration
-Orchestration files for bagpipe-score
+Kubernetes and Docker-compose orchestration files for bagpipe-score.
 
 ## Run with Docker compose
 The docker-compose file uses docker images stored on dockerhub.
