@@ -1,0 +1,40 @@
+version: '2'
+
+services:
+
+    # -------------------------
+    # Gateway & Front
+    # -------------------------
+    gateway-web:
+        image: teuki/bagpipe-scores:latest
+        ports:
+            - "80:80"
+        depends_on:
+            - lilypond-web
+            - midi2mp3-web
+        networks:
+            - api-network
+
+    # -------------------------
+    # API - lilypond
+    # -------------------------
+    lilypond-web:
+        image: teuki/lilypond-api:latest
+        expose:
+            - "80"
+        networks:
+            - api-network
+
+    # -------------------------
+    # API - midi2mp3
+    # -------------------------
+    midi2mp3-web:
+        image: teuki/midi2mp3-api:latest
+        expose:
+            - "80"
+        networks:
+            - api-network
+
+networks:
+    api-network:
+        driver: bridge
