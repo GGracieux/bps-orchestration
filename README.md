@@ -1,5 +1,5 @@
 # Bagpipe-Score Orchestration files
-Kubernetes and Docker-compose orchestration files for bagpipe-score.
+Kubernetes and Docker-compose orchestration files for [bagpipe-score](https://github.com/GGracieux/bagpipe-scores).
 
 ## Docker compose
 The docker-compose file uses docker images stored on dockerhub.
