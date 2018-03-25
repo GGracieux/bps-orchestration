@@ -1,7 +1,7 @@
 # Bagpipe-Score Orchestration files
 Kubernetes and Docker-compose orchestration files for bagpipe-score.
 
-## Run with Docker compose
+## Docker compose
 The docker-compose file uses docker images stored on dockerhub.
 - [teuki/bagpipe-scores](https://hub.docker.com/r/teuki/bagpipe-scores/) 
 - [teuki/lilypond-api](https://hub.docker.com/r/teuki/lilypond-api/) 
