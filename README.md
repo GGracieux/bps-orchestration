@@ -1,4 +1,4 @@
-# bpscores-orchestration
+# Bagpipe-Score Orchestration files
 Kubernetes and Docker-compose orchestration files for bagpipe-score.
 
 ## Run with Docker compose
